@@ -1,0 +1,1 @@
+SAPLMGMM                                          0080                                              SAPLCLCA                                          Los datos batch input para el dynpro SAPLMGMM 0080 no existen, se esperaba SAPLCLCA 0602

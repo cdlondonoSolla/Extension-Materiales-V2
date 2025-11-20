@@ -60,9 +60,9 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
         if col in df_final_txt.columns:
             df_final_txt.drop(columns=col, inplace=True)
 
-    # # Completar Almacén si está vacío
-    # mask = df_final_txt["Almacén"].isna()
-    # df_final_txt.loc[mask,"Almacén"] = df_final_txt.loc[mask,"Centro"].str.strip().str[:3] + "1"
+    # Completar Almacén si está vacío
+    mask = df_final_txt["Almacén"].isna()
+    df_final_txt.loc[mask,"Almacén"] = df_final_txt.loc[mask,"Centro"].str.strip().str[:2] + "01"
 
     # Normalizar
     df_final_txt["Centro"] = df_final_txt["Centro"].str.upper()
@@ -112,6 +112,8 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
 
     ]
     df_final_txt.loc[df_final_txt["Centro"].isin(centros_objetivo), columnas_a_vaciar] = pd.NA
+    
+    #df_final_txt.loc[df_final_txt['Almacén'].isna() | (df_final_txt['Almacén'].astype(str).str.strip() == ''), 'Almacenamiento'] = np.nan
 
     # Guardar TXT
     df_final_txt.to_csv(out_path, sep="\t", index=False, header=False, encoding="utf-8-sig")

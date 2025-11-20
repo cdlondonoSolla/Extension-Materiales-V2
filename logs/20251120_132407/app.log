@@ -667,5 +667,3 @@ FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Usuarios\\cdlondono
 2025-11-20 13:24:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
 2025-11-20 13:24:20 | INFO     | Archivos temporales eliminados.
 2025-11-20 13:24:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
-2025-11-20 13:24:20 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_132407\app.log
-2025-11-20 13:24:20 | INFO     | Proceso finalizado correctamente.
