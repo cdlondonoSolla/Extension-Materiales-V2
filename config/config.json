@@ -1,0 +1,23 @@
+{
+  "excel": {
+    "template_relative": "data/templates/Plantilla Extension Materiales.xlsx",
+    "sheet_name": "Hoja1",
+    "required_columns": ["Material", "Centro", "Fecha", "Cantidad"],
+    "dtype": {
+      "Material": "string",
+      "Centro": "string",
+      "Cantidad": "Float64"
+    },
+    "parse_dates": ["Fecha"]
+  },
+  "output": {
+    "txt_filename": "archivo_cargue.txt",
+    "delimiter": "\t"
+  },
+  "logging": {
+    "level": "INFO",
+    "rotate_when": "D",
+    "rotate_interval": 7,
+    "backup_count": 4
+  }
+}

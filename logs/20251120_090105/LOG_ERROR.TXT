@@ -1,0 +1,7 @@
+    2 El campo WERKS ha sido entregado de forma inconsistente o está vacío
+    2 WERKS para MARD es ''; antes: '1720'
+    2 Intentos para crear: 54233 1720 ____ ____ __________ ____ __ ___ ___
+    2 El campo WERKS ha sido entregado de forma inconsistente o está vacío
+    2 WERKS para MARD es ''; antes: '1720'
+    2 Intento de modificar: 54233 1720 ____ ____ __________ ____ __ ___ ___
+      
