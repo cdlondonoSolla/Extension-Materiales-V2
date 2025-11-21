@@ -14,83 +14,61 @@ El objetivo es reducir la intervención manual y garantizar un flujo controlado 
 
 LeerExcel_CopiarPortapapeles.vbs
 
-Abre la plantilla Excel y copia datos al portapapeles.
+    Abre la plantilla Excel y copia datos al portapapeles.
 
 script_tmp.vbs
 
-Consulta SAP y genera tmp.xlsx en data/tmp/.
+    Consulta SAP y genera tmp.xlsx en data/tmp/.
 
 Python (txt_writer.py)
 
-Combina datos de la plantilla y tmp.xlsx.
+    Combina datos de la plantilla y tmp.xlsx.
 
-Aplica reglas de formateo y normalización.
+    Aplica reglas de formateo y normalización.
 
-Genera archivo TXT delimitado por tabuladores.
+    Genera archivo TXT delimitado por tabuladores.
 
 cargue_sap.vbs
 
-Carga el archivo TXT en SAP.
+    Carga el archivo TXT en SAP.
 
 kill_excel.py
 
-Cierra instancias de Excel.
+    Cierra instancias de Excel.
 
 cleanup.py
 
-Elimina archivos temporales.
+    Elimina archivos temporales.
 
 logs
 
-Copia resultados y logs a carpeta con timestamp.
+    Copia resultados y logs a carpeta con timestamp.
 
 ✅ Diagrama del Flujo
 
-1 graph TD
-
-2 A[Plantilla Excel] -->|Leer datos| B[VBS: LeerExcel_CopiarPortapapeles]
-
-3 B --> C[VBS: script_tmp]
-
-4 C -->|Genera tmp.xlsx| D[Python: txt_writer]
-
-5 D -->|Genera archivo TXT| E[VBS: cargue_sap]
-
-6 E --> F[Python: kill_excel]
-
-7 F --> G[Python: cleanup]
-
-8 G --> H[logs con timestamp]
-
-9
+graph TD
+A[Plantilla Excel] -->|Leer datos| B[VBS: LeerExcel_CopiarPortapapeles]
+B --> C[VBS: script_tmp]
+C -->|Genera tmp.xlsx| D[Python: txt_writer]
+D -->|Genera archivo TXT| E[VBS: cargue_sap]
+E --> F[Python: kill_excel]
+F --> G[Python: cleanup]
+G --> H[logs con timestamp]
 
 ✅ Estructura del Proyecto
 
-1 ExtensionMateriales/
-
-2 ├─ ExtensionMateriales.exe
-
-3 ├─ config/
-
-4 │ └─ config.json
-
-5 ├─ data/
-
-6 │ └─ templates/
-
-7 │ └─ Plantilla Extension Materiales.xlsx
-
-8 ├─ scripts/
-
-9 │ ├─ LeerExcel_CopiarPortapapeles.vbs
-
-10 │ ├─ script_tmp.vbs
-
-11 │ ├─ cargue_sap.vbs
-
-12 ├─ logs/ (generado automáticamente)
-
-13
+ExtensionMateriales/
+├─ ExtensionMateriales.exe
+├─ config/
+│ └─ config.json
+├─ data/
+│ └─ templates/
+│ └─ Plantilla Extension Materiales.xlsx
+├─ scripts/
+│ ├─ LeerExcel_CopiarPortapapeles.vbs
+│ ├─ script_tmp.vbs
+│ ├─ cargue_sap.vbs
+├─ logs/ (generado automáticamente)
 
 ✅ Instrucciones de Ejecución
 
@@ -98,31 +76,23 @@ Opción 1: Ejecutable (.exe)
 
 Coloque la plantilla actualizada en:
 
-1 data/templates/Plantilla Extension Materiales.xlsx
-
-2
+data/templates/Plantilla Extension Materiales.xlsx
 
 Ejecute el programa:
 
 Doble clic en ExtensionMateriales.exe.
 
-O desde CMD:
-
-1 ExtensionMateriales.exe
-
-2
-
 El flujo:
 
 Copia datos al portapapeles (VBS).
 
-Genera tmp.xlsx desde SAP (VBS).
+    * Genera tmp.xlsx desde SAP (VBS).
 
-Crea archivo TXT para cargue (Python).
+    * Crea archivo TXT para cargue (Python).
 
-Ejecuta cargue en SAP (VBS).
+    * Ejecuta cargue en SAP (VBS).
 
-Cierra Excel y limpia temporales.
+    * Cierra Excel y limpia temporales.
 
 Resultados:
 
@@ -134,21 +104,15 @@ Opción 2: Proyecto con Python
 
 Activar entorno virtual:
 
-1 call venv\Scripts\activate
-
-2
+call venv\Scripts\activate
 
 Ejecutar flujo:
 
-1 python -m src.app.main
-
-2
+python -m src.app.main
 
 Desactivar entorno:
 
-1 call venv\Scripts\deactivate.bat
-
-2
+call venv\Scripts\deactivate.bat
 
 ✅ Requisitos
 
