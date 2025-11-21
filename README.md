@@ -60,18 +60,20 @@ El objetivo es reducir la intervención manual y garantizar un flujo controlado 
 
 ✅ Estructura del Proyecto
 
-ExtensionMateriales/
-├─ ExtensionMateriales.exe
-├─ config/
-│ └─ config.json
-├─ data/
-│ └─ templates/
-│ └─ Plantilla Extension Materiales.xlsx
-├─ scripts/
-│ ├─ LeerExcel_CopiarPortapapeles.vbs
-│ ├─ script_tmp.vbs
-│ ├─ cargue_sap.vbs
-├─ logs/ (generado automáticamente)
+```mermaid
+    ExtensionMateriales/
+        ├─ ExtensionMateriales.exe
+        ├─ config/
+        │ └─ config.json
+        ├─ data/
+        │ └─ templates/
+        │ └─ Plantilla Extension Materiales.xlsx
+        ├─ scripts/
+        │ ├─ LeerExcel_CopiarPortapapeles.vbs
+        │ ├─ script_tmp.vbs
+        │ ├─ cargue_sap.vbs
+        ├─ logs/ (generado automáticamente)
+```
 
 ✅ Instrucciones de Ejecución
 
