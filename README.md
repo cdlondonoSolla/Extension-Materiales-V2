@@ -46,14 +46,17 @@ El objetivo es reducir la intervención manual y garantizar un flujo controlado 
 
 ✅ Diagrama del Flujo
 
-graph TD
-A[Plantilla Excel] -->|Leer datos| B[VBS: LeerExcel_CopiarPortapapeles]
-B --> C[VBS: script_tmp]
-C -->|Genera tmp.xlsx| D[Python: txt_writer]
-D -->|Genera archivo TXT| E[VBS: cargue_sap]
-E --> F[Python: kill_excel]
-F --> G[Python: cleanup]
-G --> H[logs con timestamp]
+```mermaid
+    graph TD
+        A[Plantilla Excel] -->|Leer datos| B[VBS: LeerExcel_CopiarPortapapeles]
+        B --> C[VBS: script_tmp]
+        C -->|Genera tmp.xlsx| D[Python: txt_writer]
+        D -->|Genera archivo TXT| E[VBS: cargue_sap]
+        E --> F[Python: kill_excel]
+        F --> G[Python: cleanup]
+        G --> H[logs con timestamp]
+
+```
 
 ✅ Estructura del Proyecto
 
@@ -96,23 +99,25 @@ Copia datos al portapapeles (VBS).
 
 Resultados:
 
-Se guardan en logs/YYYYMMDD_HHMMSS/.
+    Se guardan en logs/YYYYMMDD_HHMMSS/.
 
-Incluye: archivo_cargue.txt, app.log, log_materiales_no_encontrados.csv.
+    Incluye: archivo_cargue.txt, app.log, log_materiales_no_encontrados.csv.
 
 Opción 2: Proyecto con Python
 
-    Activar entorno virtual:
+```powershell
 
+    # Activar entorno virtual:
     call venv\Scripts\activate
 
-    Ejecutar flujo:
 
-    ``python -m src.app.main``
+    # Ejecutar flujo:
+    python -m src.app.main
 
-    Desactivar entorno:
+    # Desactivar entorno:
 
-    ``call venv\Scripts\deactivate.bat``
+    call venv\Scripts\deactivate.bat``
+```
 
 ✅ Requisitos
 
