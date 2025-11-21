@@ -102,30 +102,30 @@ Incluye: archivo_cargue.txt, app.log, log_materiales_no_encontrados.csv.
 
 Opción 2: Proyecto con Python
 
-Activar entorno virtual:
+    Activar entorno virtual:
 
-call venv\Scripts\activate
+    ``call venv\Scripts\activate``
 
-Ejecutar flujo:
+    Ejecutar flujo:
 
-python -m src.app.main
+    ``python -m src.app.main``
 
-Desactivar entorno:
+    Desactivar entorno:
 
-call venv\Scripts\deactivate.bat
+    ``call venv\Scripts\deactivate.bat``
 
 ✅ Requisitos
 
-SAP GUI Scripting habilitado.
+- SAP GUI Scripting habilitado.
 
-Python 3.10+ (si se usa modo desarrollo).
+- Python 3.10+ (si se usa modo desarrollo).
 
-Librerías: pandas, numpy, openpyxl, pyinstaller.
+- Librerías: pandas, numpy, openpyxl, pyinstaller.
 
 ✅ Notas Importantes
 
-No mueva ni renombre carpetas (config/, data/, scripts/).
+- No mueva ni renombre carpetas (config/, data/, scripts/).
 
-Si falta la plantilla, el programa mostrará un error indicando la ruta esperada.
+- Si falta la plantilla, el programa mostrará un error indicando la ruta esperada.
 
-Para cambiar la plantilla, solo reemplácela en data/templates/.
+- Para cambiar la plantilla, solo reemplácela en data/templates/.
