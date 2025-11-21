@@ -74,25 +74,25 @@ ExtensionMateriales/
 
 Opción 1: Ejecutable (.exe)
 
-Coloque la plantilla actualizada en:
+    Coloque la plantilla actualizada en:
 
-data/templates/Plantilla Extension Materiales.xlsx
+    data/templates/Plantilla Extension Materiales.xlsx
 
-Ejecute el programa:
+    Ejecute el programa:
 
-Doble clic en ExtensionMateriales.exe.
+    Doble clic en ExtensionMateriales.exe.
 
 El flujo:
 
 Copia datos al portapapeles (VBS).
 
-    * Genera tmp.xlsx desde SAP (VBS).
+    Genera tmp.xlsx desde SAP (VBS).
 
-    * Crea archivo TXT para cargue (Python).
+    Crea archivo TXT para cargue (Python).
 
-    * Ejecuta cargue en SAP (VBS).
+    Ejecuta cargue en SAP (VBS).
 
-    * Cierra Excel y limpia temporales.
+    Cierra Excel y limpia temporales.
 
 Resultados:
 
