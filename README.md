@@ -60,7 +60,7 @@ El objetivo es reducir la intervención manual y garantizar un flujo controlado 
 
 ✅ Estructura del Proyecto
 
-```mermaid
+```
     ExtensionMateriales/
         ├─ ExtensionMateriales.exe
         ├─ config/
@@ -118,7 +118,7 @@ Opción 2: Proyecto con Python
 
     # Desactivar entorno:
 
-    call venv\Scripts\deactivate.bat``
+    call venv\Scripts\deactivate.bat
 ```
 
 ✅ Requisitos
