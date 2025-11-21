@@ -1,48 +1,48 @@
-Proyecto: Extensión de Materiales en SAP
+# Proyecto: Extensión de Materiales en SAP
 
-✅ Descripción
+## ✅ Descripción
 
 Este proyecto automatiza la extensión de materiales en SAP utilizando:
 
-SAP GUI Scripting (VBS) para interactuar con SAP.
+**SAP GUI Scripting (VBS)** para interactuar con SAP.
 
-Python (pandas, numpy) para generar un archivo TXT desde una plantilla Excel y datos temporales.
+**Python (pandas, numpy)** para generar un archivo TXT desde una plantilla Excel y datos temporales.
 
 El objetivo es reducir la intervención manual y garantizar un flujo controlado y repetible.
 
-✅ Flujo de Trabajo
+## ✅ Flujo de Trabajo
 
-LeerExcel_CopiarPortapapeles.vbs
+1. LeerExcel_CopiarPortapapeles.vbs
 
-    Abre la plantilla Excel y copia datos al portapapeles.
+   - Abre la plantilla Excel y copia datos al portapapeles.
 
-script_tmp.vbs
+2. script_tmp.vbs
 
-    Consulta SAP y genera tmp.xlsx en data/tmp/.
+   - Consulta SAP y genera tmp.xlsx en data/tmp/.
 
-Python (txt_writer.py)
+3. Python (txt_writer.py)
 
-    Combina datos de la plantilla y tmp.xlsx.
+   - Combina datos de la plantilla y tmp.xlsx.
 
-    Aplica reglas de formateo y normalización.
+   - Aplica reglas de formateo y normalización.
 
-    Genera archivo TXT delimitado por tabuladores.
+   - Genera archivo TXT delimitado por tabuladores.
 
-cargue_sap.vbs
+4. cargue_sap.vbs
 
-    Carga el archivo TXT en SAP.
+   - Carga el archivo TXT en SAP.
 
-kill_excel.py
+5. kill_excel.py
 
-    Cierra instancias de Excel.
+   - Cierra instancias de Excel.
 
-cleanup.py
+6. cleanup.py
 
-    Elimina archivos temporales.
+   - Elimina archivos temporales.
 
-logs
+7. logs
 
-    Copia resultados y logs a carpeta con timestamp.
+   - Copia resultados y logs a carpeta con timestamp.
 
 ✅ Diagrama del Flujo
 
