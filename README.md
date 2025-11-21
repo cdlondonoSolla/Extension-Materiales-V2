@@ -104,7 +104,7 @@ Opción 2: Proyecto con Python
 
     Activar entorno virtual:
 
-    ``call venv\Scripts\activate``
+    call venv\Scripts\activate
 
     Ejecutar flujo:
 
