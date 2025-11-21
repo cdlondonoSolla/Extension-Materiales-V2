@@ -7,6 +7,12 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
     # Rutas seguras
     tmp_path = resource_path("data/tmp/tmp.xlsx")
     solicitud_path = resource_path(cfg["excel"]["template_relative"])
+    
+
+    if not solicitud_path.exists():
+        raise FileNotFoundError(f"No se encontró la plantilla en {solicitud_path}. Colócala en data/templates/")
+
+    
     out_path = logs_dir() / cfg["output"]["txt_filename"]
 
     # Leer archivos

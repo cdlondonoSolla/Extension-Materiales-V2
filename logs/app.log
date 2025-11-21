@@ -669,3 +669,135 @@ FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Usuarios\\cdlondono
 2025-11-20 13:24:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
 2025-11-20 13:24:20 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_132407\app.log
 2025-11-20 13:24:20 | INFO     | Proceso finalizado correctamente.
+2025-11-20 13:41:51 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:41:51 | INFO     | Carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151
+2025-11-20 13:41:51 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:41:51 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:41:51 | INFO     | Plantilla esperada en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\templates\Plantilla Extension Materiales.xlsx
+2025-11-20 13:41:51 | INFO     | tmp.xlsx esperado en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\tmp\tmp.xlsx
+2025-11-20 13:41:51 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:41:53 | INFO     | Datos copiados al portapapeles desde la plantilla.
+2025-11-20 13:41:53 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:01 | INFO     | Archivo tmp.xlsx generado desde SAP.
+2025-11-20 13:42:01 | INFO     | generate_txt(cfg, exec_folder) no soportado; usando generate_txt(cfg) y moviendo archivo...
+2025-11-20 13:42:01 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:01 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:01 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:02 | INFO     | Archivo TXT generado (sin exec_folder) en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\archivo_cargue.txt
+2025-11-20 13:42:02 | INFO     | Instancias de Excel cerradas.
+2025-11-20 13:42:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Archivo TXT cargado en SAP.
+2025-11-20 13:42:06 | INFO     | TXT movido a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151\archivo_cargue.txt
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151\log_materiales_no_encontrados.csv
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151\LOG_BAPI.TXT
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151\LOG_CLASE.TXT
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Archivos temporales eliminados.
+2025-11-20 13:42:06 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:42:06 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134151\app.log
+2025-11-20 13:42:06 | INFO     | Proceso finalizado correctamente.
+2025-11-20 13:43:09 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:09 | INFO     | Carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309
+2025-11-20 13:43:09 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:09 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:09 | INFO     | Plantilla esperada en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\templates\Plantilla Extension Materiales.xlsx
+2025-11-20 13:43:09 | INFO     | tmp.xlsx esperado en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\tmp\tmp.xlsx
+2025-11-20 13:43:09 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:11 | INFO     | Datos copiados al portapapeles desde la plantilla.
+2025-11-20 13:43:11 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:17 | INFO     | Archivo tmp.xlsx generado desde SAP.
+2025-11-20 13:43:17 | INFO     | generate_txt(cfg, exec_folder) no soportado; usando generate_txt(cfg) y moviendo archivo...
+2025-11-20 13:43:17 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:17 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:17 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:17 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:17 | INFO     | Archivo TXT generado (sin exec_folder) en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\archivo_cargue.txt
+2025-11-20 13:43:17 | INFO     | Instancias de Excel cerradas.
+2025-11-20 13:43:17 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Archivo TXT cargado en SAP.
+2025-11-20 13:43:20 | INFO     | TXT movido a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309\archivo_cargue.txt
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309\log_materiales_no_encontrados.csv
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309\LOG_BAPI.TXT
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309\LOG_CLASE.TXT
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Archivos temporales eliminados.
+2025-11-20 13:43:20 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:43:20 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134309\app.log
+2025-11-20 13:43:20 | INFO     | Proceso finalizado correctamente.
+2025-11-20 13:44:50 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:50 | INFO     | Carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450
+2025-11-20 13:44:50 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:50 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:50 | INFO     | Plantilla esperada en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\templates\Plantilla Extension Materiales.xlsx
+2025-11-20 13:44:50 | INFO     | tmp.xlsx esperado en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\tmp\tmp.xlsx
+2025-11-20 13:44:50 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:52 | INFO     | Datos copiados al portapapeles desde la plantilla.
+2025-11-20 13:44:52 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:58 | INFO     | Archivo tmp.xlsx generado desde SAP.
+2025-11-20 13:44:58 | INFO     | generate_txt(cfg, exec_folder) no soportado; usando generate_txt(cfg) y moviendo archivo...
+2025-11-20 13:44:58 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:58 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:58 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:59 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:44:59 | INFO     | Archivo TXT generado (sin exec_folder) en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\archivo_cargue.txt
+2025-11-20 13:44:59 | INFO     | Instancias de Excel cerradas.
+2025-11-20 13:44:59 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Archivo TXT cargado en SAP.
+2025-11-20 13:45:02 | INFO     | TXT movido a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450\archivo_cargue.txt
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450\log_materiales_no_encontrados.csv
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450\LOG_BAPI.TXT
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450\LOG_CLASE.TXT
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Archivos temporales eliminados.
+2025-11-20 13:45:02 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:45:02 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134450\app.log
+2025-11-20 13:45:02 | INFO     | Proceso finalizado correctamente.
+2025-11-20 13:46:21 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:21 | INFO     | Carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621
+2025-11-20 13:46:21 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:21 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:21 | INFO     | Plantilla esperada en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\templates\Plantilla Extension Materiales.xlsx
+2025-11-20 13:46:21 | INFO     | tmp.xlsx esperado en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\data\tmp\tmp.xlsx
+2025-11-20 13:46:21 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:22 | INFO     | Datos copiados al portapapeles desde la plantilla.
+2025-11-20 13:46:22 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:28 | INFO     | Archivo tmp.xlsx generado desde SAP.
+2025-11-20 13:46:28 | INFO     | generate_txt(cfg, exec_folder) no soportado; usando generate_txt(cfg) y moviendo archivo...
+2025-11-20 13:46:28 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:28 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:28 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:29 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:29 | INFO     | Archivo TXT generado (sin exec_folder) en: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\archivo_cargue.txt
+2025-11-20 13:46:29 | INFO     | Instancias de Excel cerradas.
+2025-11-20 13:46:29 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Archivo TXT cargado en SAP.
+2025-11-20 13:46:32 | INFO     | TXT movido a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621\archivo_cargue.txt
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621\log_materiales_no_encontrados.csv
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621\LOG_BAPI.TXT
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Log de no encontrados movido a: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621\LOG_CLASE.TXT
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Archivos temporales eliminados.
+2025-11-20 13:46:32 | INFO     | [paths] app_root = D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales
+2025-11-20 13:46:32 | INFO     | Log principal copiado a carpeta de ejecución: D:\Usuarios\cdlondono\Downloads\04. Proyectos\PYTHON\Extension-Materiales\logs\20251120_134621\app.log
+2025-11-20 13:46:32 | INFO     | Proceso finalizado correctamente.
