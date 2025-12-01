@@ -10,7 +10,7 @@ a = Analysis(
     ['src\\app\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('config', 'config'), ('data\\\\templates', 'data\\\\templates'), ('scripts', 'scripts')],
+    datas=[('config', 'config'), ('scripts', 'scripts')],
     hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},

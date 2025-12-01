@@ -74,6 +74,61 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
     df_final_txt["Centro"] = df_final_txt["Centro"].str.upper()
     df_final_txt["Almacén"] = df_final_txt["Almacén"].str.upper()
 
+
+    
+    def asignar_org_ventas(centro_beneficio):
+        if centro_beneficio == "10900011":
+            return "VNSO"
+        elif centro_beneficio == "AA990006":
+            return "VNMS"
+        elif centro_beneficio == "AA900011":
+            return "VNDS"
+        elif centro_beneficio == "BB990006":
+            return "VNMS"
+        else:
+            return ""  # Valor por defecto
+
+    df_final_txt["Organización ventas"] = df_final_txt["Centro de beneficio.1"].apply(asignar_org_ventas)
+    
+    
+    # Asignar planificador de necesidades según tipo material
+    def asignar_planif_necesidades(tipo_material):
+        if tipo_material == "Z120":
+            return "Z07"
+        elif tipo_material == "Z130":
+            return "Z06"
+        elif tipo_material == "Z140":
+            return "Z06"
+        elif tipo_material == "Z150":
+            return "Z09"
+        else:
+            return ""  # Valor por defecto
+
+    mask = df_final_txt["Planif.necesidades"].isna() | (df_final_txt["Planif.necesidades"].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Planif.necesidades"] = df_final_txt["Tipo de material"].apply(asignar_planif_necesidades)
+    
+    mask = df_final_txt["Tam.lote planif.nec."].isna() | (df_final_txt["Tam.lote planif.nec."].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Tam.lote planif.nec."] = "EX"
+    
+    mask = df_final_txt["Clase aprovisionam."].isna() | (df_final_txt["Clase aprovisionam."].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Clase aprovisionam."] = "F"   
+
+    mask = df_final_txt["Grupo planif.nec."].isna() | (df_final_txt["Grupo planif.nec."].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Grupo planif.nec."] = "Z001"   
+    
+    mask = df_final_txt["Caract.planif.nec."].isna() | (df_final_txt["Caract.planif.nec."].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Caract.planif.nec."] = "PD"   
+    
+    mask = df_final_txt["Clave de horizonte"].isna() | (df_final_txt["Clave de horizonte"].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Clave de horizonte"] = "P0"
+
+    mask = df_final_txt["Canal distribución"].isna() | (df_final_txt["Canal distribución"].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Canal distribución"] = "07"
+
+    mask = df_final_txt["Derecho a descuento"].isna() | (df_final_txt["Derecho a descuento"].astype(str).str.strip() == "")
+    df_final_txt.loc[mask, "Derecho a descuento"] = "X"
+    
+    
     # Vaciar columnas de vista para centros específicos
     centros_objetivo = {"1400","B400","A400"}
     columnas_a_vaciar = ["Planif.nece 1","Planif.nece 2","Planif.nece 3","Planif.nece 4"]
@@ -118,9 +173,25 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
 
     ]
     df_final_txt.loc[df_final_txt["Centro"].isin(centros_objetivo), columnas_a_vaciar] = pd.NA
-    
-    #df_final_txt.loc[df_final_txt['Almacén'].isna() | (df_final_txt['Almacén'].astype(str).str.strip() == ''), 'Almacenamiento'] = np.nan
+
+
+    if "Clasificación fiscal" in df_final_txt.columns and "Ident.impuest.mat." in df_final_txt.columns:
+        df_final_txt["Clasificación fiscal"] = df_final_txt.apply(
+            lambda row: row["Clasificación fiscal"]
+            if pd.notna(row["Clasificación fiscal"]) and str(row["Clasificación fiscal"]).strip() != ""
+            else (
+                row["Ident.impuest.mat."]
+                if pd.notna(row["Ident.impuest.mat."]) and str(row["Ident.impuest.mat."]).strip() != ""
+                else "0"
+            ),
+            axis=1
+        )
+    else:
+        print("⚠️ Las columnas requeridas no existen en el DataFrame.")
+
 
     # Guardar TXT
     df_final_txt.to_csv(out_path, sep="\t", index=False, header=False, encoding="utf-8-sig")
     return str(out_path)
+
+#Tareas: Sacar Listado de MARA: MTART=Z120,Z130,Z140,Z150 Sacar Listado de MARC: MATNR=Listado MARA con el campo DISPO DISLS BESKZ=F FHORI=P0 RWPRO=NULL STRGR=40
