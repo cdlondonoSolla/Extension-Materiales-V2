@@ -22,5 +22,14 @@
     "rotate_when": "D",
     "rotate_interval": 7,
     "backup_count": 4
+  },
+  "paths": {
+    "excel": "data/templates",
+    "main": "src/app/main.py",
+    "scripts": "scripts",
+    "tmp_xlsx": "data/tmp/tmp.xlsx",
+    "vbs_clip": "LeerExcel_CopiarPortapapeles.vbs",
+    "vbs_tmp": "script_tmp.vbs",
+    "vbs_cargue": "cargue_sap.vbs"
   }
 }

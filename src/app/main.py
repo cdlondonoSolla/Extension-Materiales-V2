@@ -2,6 +2,7 @@
 import logging
 import subprocess
 import shutil
+import os
 from pathlib import Path
 from datetime import datetime
 import sys
@@ -12,6 +13,23 @@ from src.app.io.txt_writer import generate_txt
 from src.app.tasks.kill_excel import kill_excel
 from src.app.tasks.cleanup import cleanup_tmp
 from src.app.utils.paths import resource_path, logs_dir
+
+
+
+def ensure_src_on_path():
+    """
+    Garantiza que la carpeta 'src' esté en sys.path tanto en desarrollo
+    como en ejecutables generados con PyInstaller (fallback).
+    """
+    # Ruta del proyecto (dos niveles arriba de main.py: src/app/main.py -> proyecto/)
+    proj_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    src_path = os.path.join(proj_root, 'src')
+
+    # Si existe 'src' y aún no está en sys.path, insertarla al inicio
+    if os.path.isdir(src_path) and src_path not in sys.path:
+        sys.path.insert(0, src_path)
+
+
 
 
 def create_execution_folder() -> Path:
@@ -38,17 +56,25 @@ def run_pipeline() -> int:
 
         # 1) Logs de rutas esperadas (diagnóstico)
         plantilla_path = resource_path(cfg["excel"]["template_relative"])
-        tmp_xlsx_path = resource_path("data/tmp/tmp.xlsx")
+        # Rutas configurables desde config.json (se usan valores por defecto si faltan)
+        paths_cfg = cfg.get("paths", {})
+        scripts_dir = paths_cfg.get("scripts", "scripts")
+        tmp_xlsx_rel = paths_cfg.get("tmp_xlsx", "data/tmp/tmp.xlsx")
+        vbs_clip_name = paths_cfg.get("vbs_clip", "LeerExcel_CopiarPortapapeles.vbs")
+        vbs_tmp_name = paths_cfg.get("vbs_tmp", "script_tmp.vbs")
+        vbs_cargue_name = paths_cfg.get("vbs_cargue", "cargue_sap.vbs")
+
+        tmp_xlsx_path = resource_path(tmp_xlsx_rel)
         log.info(f"Plantilla esperada en: {plantilla_path}")
         log.info(f"tmp.xlsx esperado en: {tmp_xlsx_path}")
 
         # 2) Ejecutar VBS: copiar datos al portapapeles desde la plantilla
-        vbs_clip = resource_path("scripts/LeerExcel_CopiarPortapapeles.vbs")
+        vbs_clip = resource_path(f"{scripts_dir}/{vbs_clip_name}")
         subprocess.run(["cscript", "//nologo", str(vbs_clip)], check=True)
         log.info("Datos copiados al portapapeles desde la plantilla.")
 
         # 3) Ejecutar VBS: generar tmp.xlsx consultando en SAP
-        vbs_tmp = resource_path("scripts/script_tmp.vbs")
+        vbs_tmp = resource_path(f"{scripts_dir}/{vbs_tmp_name}")
         subprocess.run(["cscript", "//nologo", str(vbs_tmp)], check=True)
         log.info("Archivo tmp.xlsx generado desde SAP.")
 
@@ -69,7 +95,7 @@ def run_pipeline() -> int:
         log.info("Instancias de Excel cerradas.")
 
         # 5) Ejecutar VBS: cargue en SAP usando el TXT generado
-        vbs_cargue = resource_path("scripts/cargue_sap.vbs")
+        vbs_cargue = resource_path(f"{scripts_dir}/{vbs_cargue_name}")
         subprocess.run(["cscript", "//nologo", str(vbs_cargue)], check=True)
         log.info("Archivo TXT cargado en SAP.")
 

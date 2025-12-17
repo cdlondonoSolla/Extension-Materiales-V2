@@ -5,3 +5,6 @@ def kill_excel():
         subprocess.run(["taskkill", "/F", "/IM", "EXCEL.EXE"], check=False)
     except Exception as e:
         print(f"Error cerrando Excel: {e}")
+
+
+

@@ -1,0 +1,95 @@
+Instrucciones para generar y desplegar el ejecutable (Windows)
+
+Resumen
+- Objetivo: generar un único ejecutable (.exe) que pueda copiarse a otro equipo sin Python.
+- Requisitos en equipo destino: Windows, SAP GUI instalado y con Scripting habilitado, Excel instalado (si los VBS usan Excel localmente).
+
+Pre-requisitos (equipo de build)
+1. Tener Python 3.10+ y un entorno virtual en la raíz del proyecto: `venv`.
+2. Activar el venv:
+
+   powershell
+   call venv\Scripts\activate
+
+3. Instalar dependencias (si no están):
+
+   pip install -r requirements.txt
+   pip install pyinstaller
+
+Construir el ejecutable (PyInstaller)
+Opción A: usar el script incluido (recomendado)
+1. Desde la raíz del proyecto ejecutar en cmd/powershell:
+
+   build_pyinstaller.bat
+
+   - El script hace limpieza, ejecuta pyinstaller con `--onefile` y empaqueta `config/` y `scripts/`.
+   - Al finalizar, encontrará el ejecutable en `dist\ExtensionMateriales.exe`.
+
+Opción B: comando directo PyInstaller
+
+   pyinstaller --clean --noconfirm \
+     --name "ExtensionMateriales" \
+     --onefile \
+     --console \
+     --collect-submodules pandas \
+     --collect-submodules numpy \
+     --paths "%CD%\\src" \
+     --add-data "config;config" \
+     --add-data "scripts;scripts" \
+     src\app\main.py
+
+Notas de empaquetado
+- Asegúrese de que `config/config.json` y los VBS estén presentes antes de construir; el script `build_pyinstaller.bat` ya añade `config` y `scripts` al EXE.
+- El `--onefile` genera un único EXE; en tiempo de ejecución PyInstaller extrae en una carpeta temporal.
+- Si necesita incluir `data/templates/Plantilla Extension Materiales.xlsx` en el paquete, añada `--add-data "data/templates;data/templates"`, pero normalmente se recomienda distribuir la plantilla fuera del EXE para que el usuario pueda actualizarla.
+
+Preparar el paquete para el equipo destino
+1. Crear una carpeta en la máquina destino (por ejemplo `C:\ExtensionMateriales`).
+2. Copiar desde la máquina de build a la carpeta destino:
+   - `dist\ExtensionMateriales.exe`
+   - La carpeta `config` (contiene `config.json`) — si usó `--add-data`, el EXE incluye `config` pero conviene llevar una copia editable separada.
+   - La carpeta `scripts` (VBS): `scripts\*.vbs`.
+   - La carpeta `data\templates` con la plantilla Excel: `data\templates\Plantilla Extension Materiales.xlsx`.
+
+Estructura mínima en el equipo destino
+
+C:\ExtensionMateriales\
+  - ExtensionMateriales.exe
+  - config\config.json
+  - scripts\LeerExcel_CopiarPortapapeles.vbs
+  - scripts\script_tmp.vbs
+  - scripts\cargue_sap.vbs
+  - data\templates\Plantilla Extension Materiales.xlsx
+
+Permisos y configuración en equipo destino
+- Instalar SAP GUI y habilitar SAP GUI Scripting (config del servidor/cliente) — necesario para que los VBS interactúen con SAP.
+- Asegurarse de que Excel esté instalado si los VBS manipulan archivos Excel localmente.
+- Si Windows Defender/AV bloquea el ejecutable, añadir excepción o firmar el ejecutable.
+- Ejecutar el EXE con usuario que tenga permisos para ejecutar scripts y acceder a SAP.
+
+Ejecutar y probar
+1. En el equipo destino, abrir PowerShell y ejecutar:
+
+   cd C:\ExtensionMateriales
+   .\ExtensionMateriales.exe
+
+2. Verificar que en `logs\YYYYMMDD_HHMMSS` se generan los outputs esperados.
+3. Si falla, revisar `config\config.json` y `logs\app.log`.
+
+Actualizaciones y personalización de `config.json`
+- El EXE leerá `config/config.json` desde el directorio de ejecución cuando exista en disco. Para cambiar rutas o nombres (por ejemplo `vbs`), editar `config\config.json` y reiniciar el EXE.
+
+Solución de problemas comunes
+- Error cscript no encontrado: asegurar que `cscript.exe` (parte de Windows) esté accesible en PATH (debería estarlo por defecto).
+- VBS no interactúa con SAP: revisar que SAP GUI esté abierto y que Scripting esté habilitado en el servidor/cliente.
+- Falta plantilla: copiar `data\templates\Plantilla Extension Materiales.xlsx` al equipo destino.
+- Dependencias de C runtime: si el EXE falla al iniciarse, instalar Microsoft Visual C++ Redistributable para Visual Studio 2015-2022.
+
+Firmado y distribución corporativa (opcional)
+- Para evitar bloqueos por AV/proteger integridad, firmar el ejecutable con un certificado de código.
+
+Consejos de seguridad
+- Mantener `config\config.json` sólo con los permisos necesarios.
+- No ejecutar como administrador salvo que sea estrictamente necesario.
+
+¿Quieres que genere un ZIP listo para copiar (dist + config + scripts + data/templates) desde mi entorno? Si sí, lo preparo y te indico la ruta.

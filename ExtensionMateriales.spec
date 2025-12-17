@@ -8,7 +8,7 @@ hiddenimports += collect_submodules('numpy')
 
 a = Analysis(
     ['src\\app\\main.py'],
-    pathex=[],
+    pathex=['D:\\Usuarios\\cdlondono\\Downloads\\04. Proyectos\\PYTHON\\Extension-Materiales\\src'],
     binaries=[],
     datas=[('config', 'config'), ('scripts', 'scripts')],
     hiddenimports=hiddenimports,

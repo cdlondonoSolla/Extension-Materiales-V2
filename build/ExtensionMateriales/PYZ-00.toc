@@ -1,4 +1,4 @@
-('d:\\Usuarios\\cdlondono\\Downloads\\04. '
+('D:\\Usuarios\\cdlondono\\Downloads\\04. '
  'Proyectos\\PYTHON\\Extension-Materiales\\build\\ExtensionMateriales\\PYZ-00.pyz',
  [('PyInstaller',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
@@ -315,6 +315,10 @@
   ('codeop',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\codeop.py',
+   'PYMODULE'),
+  ('commctrl',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\commctrl.py',
    'PYMODULE'),
   ('concurrent',
    'C:\\Program '
@@ -763,6 +767,10 @@
   ('logging',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\logging\\handlers.py',
    'PYMODULE'),
   ('lzma',
    'C:\\Program '
@@ -8923,6 +8931,18 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pprint.py',
    'PYMODULE'),
+  ('psutil',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\psutil\\__init__.py',
+   'PYMODULE'),
+  ('psutil._common',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\psutil\\_common.py',
+   'PYMODULE'),
+  ('psutil._pswindows',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\psutil\\_pswindows.py',
+   'PYMODULE'),
   ('py_compile',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\py_compile.py',
@@ -8938,6 +8958,10 @@
   ('pydoc_data.topics',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pythoncom',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\pythoncom.py',
    'PYMODULE'),
   ('pytz',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
@@ -8958,6 +8982,47 @@
   ('pytz.tzinfo',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\pytz\\tzinfo.py',
+   'PYMODULE'),
+  ('pywin',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\__init__.py',
+   'PYMODULE'),
+  ('pywin.dialogs',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\dialogs\\__init__.py',
+   'PYMODULE'),
+  ('pywin.dialogs.list',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\dialogs\\list.py',
+   'PYMODULE'),
+  ('pywin.dialogs.status',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\dialogs\\status.py',
+   'PYMODULE'),
+  ('pywin.mfc',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\mfc\\__init__.py',
+   'PYMODULE'),
+  ('pywin.mfc.dialog',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\mfc\\dialog.py',
+   'PYMODULE'),
+  ('pywin.mfc.object',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\mfc\\object.py',
+   'PYMODULE'),
+  ('pywin.mfc.thread',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\mfc\\thread.py',
+   'PYMODULE'),
+  ('pywin.mfc.window',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\Pythonwin\\pywin\\mfc\\window.py',
+   'PYMODULE'),
+  ('pywin32_system32', '-', 'PYMODULE'),
+  ('pywintypes',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\pywintypes.py',
    'PYMODULE'),
   ('queue',
    'C:\\Program '
@@ -9007,6 +9072,10 @@
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\six.py',
    'PYMODULE'),
+  ('smtplib',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\smtplib.py',
+   'PYMODULE'),
   ('socket',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\socket.py',
@@ -9026,6 +9095,54 @@
   ('sqlite3.dump',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dump.py',
+   'PYMODULE'),
+  ('src',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\__init__.py',
+   'PYMODULE'),
+  ('src.app',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\__init__.py',
+   'PYMODULE'),
+  ('src.app.config',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\config.py',
+   'PYMODULE'),
+  ('src.app.io',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\io\\__init__.py',
+   'PYMODULE'),
+  ('src.app.io.txt_writer',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\io\\txt_writer.py',
+   'PYMODULE'),
+  ('src.app.logging_setup',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\logging_setup.py',
+   'PYMODULE'),
+  ('src.app.tasks',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\__init__.py',
+   'PYMODULE'),
+  ('src.app.tasks.cleanup',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\cleanup.py',
+   'PYMODULE'),
+  ('src.app.tasks.kill_excel',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\kill_excel.py',
+   'PYMODULE'),
+  ('src.app.utils',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\__init__.py',
+   'PYMODULE'),
+  ('src.app.utils.exceptions',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\exceptions.py',
+   'PYMODULE'),
+  ('src.app.utils.paths',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\paths.py',
    'PYMODULE'),
   ('ssl',
    'C:\\Program '
@@ -9255,6 +9372,86 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\webbrowser.py',
    'PYMODULE'),
+  ('win32com',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client.CLSIDToClass',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\CLSIDToClass.py',
+   'PYMODULE'),
+  ('win32com.client.build',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\build.py',
+   'PYMODULE'),
+  ('win32com.client.dynamic',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\dynamic.py',
+   'PYMODULE'),
+  ('win32com.client.gencache',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\gencache.py',
+   'PYMODULE'),
+  ('win32com.client.genpy',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\genpy.py',
+   'PYMODULE'),
+  ('win32com.client.makepy',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\makepy.py',
+   'PYMODULE'),
+  ('win32com.client.selecttlb',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\selecttlb.py',
+   'PYMODULE'),
+  ('win32com.client.util',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\client\\util.py',
+   'PYMODULE'),
+  ('win32com.server',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\server\\__init__.py',
+   'PYMODULE'),
+  ('win32com.server.dispatcher',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\server\\dispatcher.py',
+   'PYMODULE'),
+  ('win32com.server.exception',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\server\\exception.py',
+   'PYMODULE'),
+  ('win32com.server.policy',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\server\\policy.py',
+   'PYMODULE'),
+  ('win32com.server.util',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\server\\util.py',
+   'PYMODULE'),
+  ('win32com.shell',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32comext\\shell\\__init__.py',
+   'PYMODULE'),
+  ('win32com.shell.shellcon',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32comext\\shell\\shellcon.py',
+   'PYMODULE'),
+  ('win32com.universal',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\universal.py',
+   'PYMODULE'),
+  ('win32com.util',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32com\\util.py',
+   'PYMODULE'),
+  ('win32con',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\win32con.py',
+   'PYMODULE'),
   ('win32ctypes',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32ctypes\\__init__.py',
@@ -9326,6 +9523,18 @@
   ('win32ctypes.version',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32ctypes\\version.py',
+   'PYMODULE'),
+  ('win32evtlogutil',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\win32evtlogutil.py',
+   'PYMODULE'),
+  ('win32traceutil',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\win32traceutil.py',
+   'PYMODULE'),
+  ('winerror',
+   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'Proyectos\\PYTHON\\Extension-Materiales\\venv\\Lib\\site-packages\\win32\\lib\\winerror.py',
    'PYMODULE'),
   ('xml',
    'C:\\Program '
