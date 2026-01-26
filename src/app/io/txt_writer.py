@@ -20,6 +20,19 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
     df_solicitud = pd.read_excel(solicitud_path, dtype=str, engine="openpyxl")
 
     # Renombrar columna clave
+    
+    df_solicitud = df_solicitud.rename(columns={"Título":"Codigo"})
+    df_solicitud = df_solicitud.rename(columns={"CentroExtender":"Centro"})
+    df_solicitud = df_solicitud.rename(columns={"Almacen":"Almacen"})
+    df_solicitud = df_solicitud.rename(columns={"CentroModelo":"CentroModelo"})
+    df_solicitud = df_solicitud.rename(columns={"CentroBeneficio":"CentroBeneficio"})
+    df_solicitud = df_solicitud.rename(columns={"ID":"Secuencia"})
+    df_solicitud = df_solicitud.rename(columns={"Estado":"Estado"})
+    df_solicitud = df_solicitud.rename(columns={"TipoMaterial":"TipoMaterial"})
+    df_solicitud = df_solicitud.rename(columns={"Mensaje":"Mensaje"})
+    df_solicitud = df_solicitud.rename(columns={"id_axuliar":"Id_auxiliar"})
+
+    
     df_solicitud = df_solicitud.rename(columns={"Codigo": "Material"})
     df_solicitud["Material"] = df_solicitud["Material"].astype(str)
     df_tmp["Material"] = df_tmp["Material"].astype(str)

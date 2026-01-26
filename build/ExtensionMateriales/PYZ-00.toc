@@ -1,4 +1,4 @@
-('D:\\Usuarios\\cdlondono\\Downloads\\04. '
+('d:\\Usuarios\\cdlondono\\Downloads\\04. '
  'Proyectos\\PYTHON\\Extension-Materiales\\build\\ExtensionMateriales\\PYZ-00.pyz',
  [('PyInstaller',
    'D:\\Usuarios\\cdlondono\\Downloads\\04. '
@@ -9097,51 +9097,51 @@
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dump.py',
    'PYMODULE'),
   ('src',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\__init__.py',
    'PYMODULE'),
   ('src.app',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\__init__.py',
    'PYMODULE'),
   ('src.app.config',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\config.py',
    'PYMODULE'),
   ('src.app.io',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\io\\__init__.py',
    'PYMODULE'),
   ('src.app.io.txt_writer',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\io\\txt_writer.py',
    'PYMODULE'),
   ('src.app.logging_setup',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\logging_setup.py',
    'PYMODULE'),
   ('src.app.tasks',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\__init__.py',
    'PYMODULE'),
   ('src.app.tasks.cleanup',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\cleanup.py',
    'PYMODULE'),
   ('src.app.tasks.kill_excel',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\tasks\\kill_excel.py',
    'PYMODULE'),
   ('src.app.utils',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\__init__.py',
    'PYMODULE'),
   ('src.app.utils.exceptions',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\exceptions.py',
    'PYMODULE'),
   ('src.app.utils.paths',
-   'D:\\Usuarios\\cdlondono\\Downloads\\04. '
+   'd:\\Usuarios\\cdlondono\\Downloads\\04. '
    'Proyectos\\PYTHON\\Extension-Materiales\\src\\app\\utils\\paths.py',
    'PYMODULE'),
   ('ssl',

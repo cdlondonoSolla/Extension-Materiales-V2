@@ -150,6 +150,17 @@ def run_pipeline() -> int:
             except Exception as copy_err:
                 log.warning(f"No se pudo copiar app.log a la carpeta de ejecución: {copy_err}")
 
+        # 9) Abrir la plantilla en Excel
+        try:
+            plantilla_file = resource_path(cfg["excel"]["template_relative"])
+            if os.path.exists(plantilla_file):
+                os.startfile(plantilla_file)
+                log.info(f"Plantilla abierta: {plantilla_file}")
+            else:
+                log.warning(f"Archivo de plantilla no encontrado: {plantilla_file}")
+        except Exception as open_err:
+            log.warning(f"No se pudo abrir la plantilla: {open_err}")
+
         log.info("Proceso finalizado correctamente.")
         return 0
 
