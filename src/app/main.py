@@ -63,10 +63,16 @@ def run_pipeline() -> int:
         vbs_clip_name = paths_cfg.get("vbs_clip", "LeerExcel_CopiarPortapapeles.vbs")
         vbs_tmp_name = paths_cfg.get("vbs_tmp", "script_tmp.vbs")
         vbs_cargue_name = paths_cfg.get("vbs_cargue", "cargue_sap.vbs")
+        vbs_almacen_mass = paths_cfg.get("vbs_almacen_mass", "extender_almacen_msc_mass.vbs")
 
         tmp_xlsx_path = resource_path(tmp_xlsx_rel)
         log.info(f"Plantilla esperada en: {plantilla_path}")
         log.info(f"tmp.xlsx esperado en: {tmp_xlsx_path}")
+        
+        # 5) Ejecutar VBS: generar tmp.xlsx consultando en SAP
+        vbs_tmp = resource_path(f"{scripts_dir}/{vbs_almacen_mass}")
+        subprocess.run(["cscript", "//nologo", str(vbs_tmp)], check=True)
+        log.info("Materiales Extendidos a los almacenes.")
 
         # 2) Ejecutar VBS: copiar datos al portapapeles desde la plantilla
         vbs_clip = resource_path(f"{scripts_dir}/{vbs_clip_name}")
@@ -89,6 +95,7 @@ def run_pipeline() -> int:
             log.info("generate_txt(cfg, exec_folder) no soportado; usando generate_txt(cfg) y moviendo archivo...")
             txt_path_str = generate_txt(cfg)  # type: ignore[call-arg]
             log.info(f"Archivo TXT generado (sin exec_folder) en: {txt_path_str}")
+            
 
         # 6) Cerrar Excel (prevención de bloqueos)
         kill_excel()
@@ -137,6 +144,7 @@ def run_pipeline() -> int:
         if log_error.exists():
             shutil.move(str(log_error), str(exec_folder / log_error.name))
             log.info(f"Log de no encontrados movido a: {exec_folder / log_error.name}")
+        
         # 7) Limpiar temporales
         cleanup_tmp()
         log.info("Archivos temporales eliminados.")

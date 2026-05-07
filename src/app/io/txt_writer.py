@@ -268,7 +268,10 @@ def generate_txt(cfg: Dict[str, Any]) -> str:
         )
 
     # Defaults NA requeridos
-    for col in ["Centro de beneficio", "Precio variable", "Precio estándar", "Stat.mat.específ.ce."]:
+    for col in ["Centro de beneficio", "Precio variable", "Precio estándar", "Stat.mat.específ.ce.", "Tamaño lote mínimo",
+                 "Tamaño lote máximo", "Tamaño lote fijo", "Stock máximo", "Rechazo conjunto (%)", "Valor de redondeo", "Stock de seguridad",
+                 "Modelo de pronóstico", "Indicador de período", "Periodos del pasado", "Períodos pronóstico", "Inicialización", 
+                 "Límite de alarma", "Selección de modelo", "Proced.selec.modelo", "Alis.valor tendencia", "Alisamiento DMA"]:
         df_final_txt[col] = pd.NA
         # if col not in df_final_txt.columns:
         #     df_final_txt[col] = pd.NA
